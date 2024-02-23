@@ -1,0 +1,33 @@
+.sitebar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    min-height: 100vh;
+    gap: 100px;
+    padding: 30px 50px;
+    background-color: rgb(13, 7, 37);
+    h1{
+        color: #ffffff;
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a{
+            width: 100%;
+            height: 50px;
+            font-size: 22px;
+            color: #acb5ff;
+            background-color: rgb(13, 7, 37);
+            border-radius: 10px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a:hover{
+            background-color: #16174b;
+        }
+    }
+}

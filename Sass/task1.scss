@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+%btn{
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@mixin button($bg-c , $padding , $f-size){
+    background-color: $bg-c;
+    padding: $padding;
+    font-size: $f-size;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item{
+        width: 500px;
+        height: 500px;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .lg{
+            @extend %btn;
+            @include button(blue, 20px 25px, 22px)
+        }
+        .md{
+            @extend %btn;
+            @include button(crimson, 15px 20px, 20px)
+        }
+        .sm{
+            @extend %btn;
+            @include button(green, 10px 15px, 18px)
+        }
+    }
+}
